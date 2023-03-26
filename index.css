@@ -1,0 +1,139 @@
+
+.more_link:hover {
+    color: #129efc;
+    
+   
+}
+.icon {
+    position: relative;
+    height: 14px;
+    width: 14px;
+    vertical-align: -2px;
+    right: -5px;
+    display: none;
+}
+
+.more_link:hover .icon {
+    color: #129efc;
+    display: inline-block;
+    
+    animation: appear 0.4s forwards ;
+    
+  
+}
+
+@keyframes appear {
+    from {
+        
+        opacity: 0;
+        margin-right: -30px;
+        
+    }
+    50%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 1;
+    }
+    to {
+        display: inline-block;
+        opacity: 1;
+        margin-right: 5px; /* add this line to move the arrow 3px to the left */
+    }
+}
+  
+
+
+.carousel-cell{
+    
+    width: 124px;
+    min-height: 179px;
+    max-height: 253px;
+    max-width: 209px;
+    background-size: cover;
+    background-position: center center;
+}
+@media screen and ( min-width: 768px ) {
+    /* half-width cells for larger devices */
+    .carousel-cell { width: 40%;height: 652px; }
+  }
+.carousel-cell::before{
+    display: block;
+    content: '';
+}
+.carousel{
+    margin-top: 40px;
+    margin-left: 20px;
+    box-sizing: border-box;
+}
+
+
+/* img{
+    scale: 0.9;
+}
+img:hover{
+    animation: zoom 0.8s forwards ;
+}
+@keyframes zoom {
+    to{
+        scale: 0.95;
+    }
+} */
+.flickity-prev-next-button .arrow {
+    fill: #129efc;
+  }
+
+/* position dots in carousel */
+.flickity-page-dots {
+    display: none;
+  }
+.border_blue{
+    border: 3px solid #129efc;
+}
+.vertical-scrollable{
+    overflow-y: scroll;
+    
+    
+}
+/* width */
+::-webkit-scrollbar {
+    width: 0;
+  }
+
+.blue_hover:hover{
+    color: white;
+    background-color: #129efc;
+}
+.blue_hover{
+    color: rgb(37, 37, 37);
+}
+.bi-facebook:hover{
+    color: rgb(0, 0, 172);
+    cursor: pointer;
+} 
+.bi-twitter:hover{
+    color: #129efc;
+    cursor: pointer;
+} 
+.bi-pinterest:hover{
+    cursor: pointer;
+    color: rgb(149, 0, 0);
+} 
+.opacity-9:hover{
+    animation: opacity 0.5s forwards ;
+}
+@keyframes opacity {
+    to{
+        opacity: 0.7;
+    }
+}
+
+
+
+
+
+
+
+
+
+
